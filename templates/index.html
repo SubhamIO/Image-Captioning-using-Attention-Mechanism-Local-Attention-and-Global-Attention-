@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Caption Bot</title>
+</head>
+<body>
+    <center><h1>Image Captioning Bot</h1></center>
+    <style>
+        body {
+              background-image: url('https://miro.medium.com/max/2560/1*U3MyNXeK4ZrpKQQ34OSL-g.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              }
+</style>
+<div>
+  <form action="/predict" method="POST">
+    <center><label for="pic_url">Put Photo URL here</label></center>
+      <center><textarea name="pic_url" rows="10" cols="30" placeholder="Give me Images, I will give you Captions !!" required="required"></textarea></center>
+    <br>
+    <center><input type="submit" value="Submit"></center>
+
+  </form>
+<center><font color = 'red'><h1>{{ prediction_text }}</h1></font></center>
+</div>
+</body>
+</html>
